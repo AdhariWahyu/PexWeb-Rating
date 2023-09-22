@@ -18,18 +18,22 @@ html,body{
   background: #111;
   padding: 20px 30px;
   border: 1px solid #444;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 .container .post{
   display: none;
 }
 .container .text{
   font-size: 25px;
-  color: #666;
+  color: #e2e2e2;
   font-weight: 500;
 }
 .container .edit{
@@ -37,7 +41,7 @@ html,body{
   right: 10px;
   top: 5px;
   font-size: 16px;
-  color: #666;
+  color: #e2e2e2;
   font-weight: 500;
   cursor: pointer;
 }

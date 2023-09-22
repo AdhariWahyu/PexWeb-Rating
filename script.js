@@ -1,6 +1,4 @@
-// script.js
-
-// Get references to the textarea and template buttons
+// to the textarea and template buttons
 const textarea = document.getElementById("description");
 const template1Button = document.getElementById("template1");
 const template2Button = document.getElementById("template2");

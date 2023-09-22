@@ -1,89 +1,65 @@
-// first star widget
-const btn1 = document.querySelector("#star-widget-1 button");
-const post1 = document.querySelector("#star-widget-1 .post");
-const widget1 = document.querySelector("#star-widget-1");
-const editBtn1 = document.querySelector("#star-widget-1 .edit");
+// script.js
 
-btn1.onclick = () => {
-    widget1.style.display = "none";
-    post1.style.display = "block";
-    editBtn1.onclick = () => {
-        widget1.style.display = "block";
-        post1.style.display = "none";
-    }
+// Get references to the textarea and template buttons
+const textarea = document.getElementById("description");
+const template1Button = document.getElementById("template1");
+const template2Button = document.getElementById("template2");
+const template3Button = document.getElementById("template3");
+const template4Button = document.getElementById("template4");
 
-    return false;
+// Define the templates
+const templates = {
+    template1: "This is template 1.",
+    template2: "Here goes template 2.",
+    template3: "You've selected template 3.",
+    template4: "You choose template 4."
+};
+
+// Initialize an empty array to store selected templates
+const selectedTemplates = [];
+
+// Function to update the textarea with selected templates
+function updateTextarea() {
+    textarea.value = selectedTemplates.join('\n'); // Use '\n' to separate selected templates
 }
 
-// second star widget
-const btn2 = document.querySelector("#star-widget-2 button");
-const post2 = document.querySelector("#star-widget-2 .post");
-const widget2 = document.querySelector("#star-widget-2");
-const editBtn2 = document.querySelector("#star-widget-2 .edit");
-
-
-btn2.onclick = () => {
-    widget2.style.display = "none";
-    post2.style.display = "block";
-    editBtn2.onclick = () => {
-        widget2.style.display = "block";
-        post2.style.display = "none";
+// Add click event listeners to the template buttons
+template1Button.addEventListener("click", function () {
+    if (!selectedTemplates.includes(templates.template1)) {
+        selectedTemplates.push(templates.template1);
+    } else {
+        const index = selectedTemplates.indexOf(templates.template1);
+        selectedTemplates.splice(index, 1);
     }
-
-    return false;
-}
-
-// third star widget
-const btn3 = document.querySelector("#star-widget-3 button");
-const post3 = document.querySelector("#star-widget-3 .post");
-const widget3 = document.querySelector("#star-widget-3");
-const editBtn3 = document.querySelector("#star-widget-3 .edit");
-
-
-
-btn3.onclick = () => {
-    widget3.style.display = "none";
-    post3.style.display = "block";
-    editBtn3.onclick = () => {
-        widget3.style.display = "block";
-        post3.style.display = "none";
-    }
-
-    return false;
-}
-
-// fourth star widget
-
-document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('ratingForm');
-    const popup = document.getElementById('popup');
-
-    form.addEventListener('submit', function (e) {
-        e.preventDefault(); // Prevent the form from submitting
-
-        // Show the popup
-        popup.style.display = 'block';
-
-        // Hide the popup after a few seconds (e.g., 3 seconds)
-        setTimeout(function () {
-            popup.style.display = 'none';
-        }, 3000); // 3000 milliseconds (3 seconds)
-    });
+    updateTextarea();
 });
 
-const btn4 = document.querySelector("#star-widget-4 button");
-const post4 = document.querySelector("#star-widget-4 .post");
-const widget4 = document.querySelector("#star-widget-4");
-const editBtn4 = document.querySelector("#star-widget-4 .edit");
-
-
-btn4.onclick = () => {
-    widget4.style.display = "none";
-    post4.style.display = "block";
-    editBtn4.onclick = () => {
-        widget4.style.display = "block";
-        post4.style.display = "none";
+template2Button.addEventListener("click", function () {
+    if (!selectedTemplates.includes(templates.template2)) {
+        selectedTemplates.push(templates.template2);
+    } else {
+        const index = selectedTemplates.indexOf(templates.template2);
+        selectedTemplates.splice(index, 1);
     }
-    
-    return false;
-}
+    updateTextarea();
+});
+
+template3Button.addEventListener("click", function () {
+    if (!selectedTemplates.includes(templates.template3)) {
+        selectedTemplates.push(templates.template3);
+    } else {
+        const index = selectedTemplates.indexOf(templates.template3);
+        selectedTemplates.splice(index, 1);
+    }
+    updateTextarea();
+});
+
+template4Button.addEventListener("click", function () {
+    if (!selectedTemplates.includes(templates.template4)) {
+        selectedTemplates.push(templates.template4);
+    } else {
+        const index = selectedTemplates.indexOf(templates.template4);
+        selectedTemplates.splice(index, 1);
+    }
+    updateTextarea();
+});

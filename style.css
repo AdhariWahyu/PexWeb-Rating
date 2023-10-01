@@ -11,15 +11,16 @@ body {
   height: 100%;
   place-items: center;
   text-align: center;
-  background: #000;
+  background: #ffffff;
 }
 .container {
   position: relative;
   width: 470px;
-  background: #111;
+  background: #d0d0d0;
   padding: 20px 30px;
-  border: 1px solid #444;
-  border-radius: 5px;
+  /*border: 1px solid #444;
+  */
+  border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -54,7 +55,7 @@ body {
 }
 .star-widget label {
   font-size: 40px;
-  color: #444;
+  color: #666;
   padding: 10px;
   /* display: inline-block; */
   margin: 0 8px;
@@ -65,30 +66,92 @@ body {
 
 input:not(:checked) ~ label:hover,
 input:not(:checked) ~ label:hover ~ label {
-  color: #fd4;
+  color: #e2b82e;
 }
 input:checked ~ label {
-  color: #fd4;
+  color: #e2b82e;
 }
-input#rate-5:checked ~ label {
+
+input#rate1-5:checked ~ label {
   color: #fe7;
   text-shadow: 0 0 20px #952;
 }
-#rate-1:checked ~ form header:before {
+#rate1-1:checked ~ form header:before {
   content: "I just hate it ";
 }
-#rate-2:checked ~ form header:before {
+#rate1-2:checked ~ form header:before {
   content: "I don't like it ";
 }
-#rate-3:checked ~ form header:before {
+#rate1-3:checked ~ form header:before {
   content: "It is awesome ";
 }
-#rate-4:checked ~ form header:before {
+#rate1-4:checked ~ form header:before {
   content: "I just like it ";
 }
-#rate-5:checked ~ form header:before {
+#rate1-5:checked ~ form header:before {
   content: "I just love it ";
 }
+
+input#rate2-5:checked ~ label {
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+#rate2-1:checked ~ form header:before {
+  content: "I just hate it ";
+}
+#rate2-2:checked ~ form header:before {
+  content: "I don't like it ";
+}
+#rate2-3:checked ~ form header:before {
+  content: "It is awesome ";
+}
+#rate2-4:checked ~ form header:before {
+  content: "I just like it ";
+}
+#rate2-5:checked ~ form header:before {
+  content: "I just love it ";
+}
+
+input#rate3-5:checked ~ label {
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+#rate3-1:checked ~ form header:before {
+  content: "I just hate it ";
+}
+#rate3-2:checked ~ form header:before {
+  content: "I don't like it ";
+}
+#rate3-3:checked ~ form header:before {
+  content: "It is awesome ";
+}
+#rate3-4:checked ~ form header:before {
+  content: "I just like it ";
+}
+#rate3-5:checked ~ form header:before {
+  content: "I just love it ";
+}
+
+input#rate4-5:checked ~ label {
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+#rate4-1:checked ~ form header:before {
+  content: "I just hate it ";
+}
+#rate4-2:checked ~ form header:before {
+  content: "I don't like it ";
+}
+#rate4-3:checked ~ form header:before {
+  content: "It is awesome ";
+}
+#rate4-4:checked ~ form header:before {
+  content: "I just like it ";
+}
+#rate4-5:checked ~ form header:before {
+  content: "I just love it ";
+}
+
 .container form {
   display: none;
 }
@@ -98,7 +161,7 @@ input:checked ~ form {
 form header {
   width: 100%;
   font-size: 25px;
-  color: #fe7;
+  color: #222;
   font-weight: 500;
   margin: 5px 0 20px 0;
   text-align: center;
@@ -131,16 +194,19 @@ form .btn {
 form .btn button {
   height: 100%;
   width: 100%;
-  border: 1px solid #444;
+  /* border: 1px solid #444; */
   outline: none;
-  background: #222;
-  color: #999;
+  background: #bdb9b9;
+  color: #222;
   font-size: 17px;
   font-weight: 500;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
 }
 form .btn button:hover {
-  background: #1b1b1b;
+  background: #d71818;
+  color: #e2e2e2;
 }

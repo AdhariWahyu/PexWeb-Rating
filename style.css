@@ -72,84 +72,72 @@ input:checked ~ label {
   color: #e2b82e;
 }
 
-input#rate1-5:checked ~ label {
+input#rate1-4:checked ~ label {
   color: #fe7;
   text-shadow: 0 0 20px #952;
 }
 #rate1-1:checked ~ form header:before {
-  content: "I just hate it ";
+  content: "I just hate it 😠";
 }
 #rate1-2:checked ~ form header:before {
-  content: "I don't like it ";
+  content: "it is ok 😁";
 }
 #rate1-3:checked ~ form header:before {
-  content: "It is awesome ";
+  content: "it so Good 😎";
 }
 #rate1-4:checked ~ form header:before {
-  content: "I just like it ";
-}
-#rate1-5:checked ~ form header:before {
-  content: "I just love it ";
+  content: "I just love it 😍";
 }
 
-input#rate2-5:checked ~ label {
+input#rate2-4:checked ~ label {
   color: #fe7;
   text-shadow: 0 0 20px #952;
 }
 #rate2-1:checked ~ form header:before {
-  content: "I just hate it ";
+  content: "I just hate it 😠";
 }
 #rate2-2:checked ~ form header:before {
-  content: "I don't like it ";
+  content: "it is ok 😁";
 }
 #rate2-3:checked ~ form header:before {
-  content: "It is awesome ";
+  content: "it so Good 😎";
 }
 #rate2-4:checked ~ form header:before {
-  content: "I just like it ";
-}
-#rate2-5:checked ~ form header:before {
-  content: "I just love it ";
+  content: "I just love it 😍";
 }
 
-input#rate3-5:checked ~ label {
+input#rate3-4:checked ~ label {
   color: #fe7;
   text-shadow: 0 0 20px #952;
 }
 #rate3-1:checked ~ form header:before {
-  content: "I just hate it ";
+  content: "I just hate it 😠";
 }
 #rate3-2:checked ~ form header:before {
-  content: "I don't like it ";
+  content: "it is ok 😁";
 }
 #rate3-3:checked ~ form header:before {
-  content: "It is awesome ";
+  content: "it so Good 😎";
 }
 #rate3-4:checked ~ form header:before {
-  content: "I just like it ";
-}
-#rate3-5:checked ~ form header:before {
-  content: "I just love it ";
+  content: "I just love it 😍";
 }
 
-input#rate4-5:checked ~ label {
+input#rate4-4:checked ~ label {
   color: #fe7;
   text-shadow: 0 0 20px #952;
 }
 #rate4-1:checked ~ form header:before {
-  content: "I just hate it ";
+  content: "I just hate it 😠";
 }
 #rate4-2:checked ~ form header:before {
-  content: "I don't like it ";
+  content: "it is ok 😁";
 }
 #rate4-3:checked ~ form header:before {
-  content: "It is awesome ";
+  content: "it so Good 😎";
 }
 #rate4-4:checked ~ form header:before {
-  content: "I just like it ";
-}
-#rate4-5:checked ~ form header:before {
-  content: "I just love it ";
+  content: "I just love it 😍";
 }
 
 .container form {
